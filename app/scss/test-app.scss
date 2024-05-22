@@ -1,0 +1,76 @@
+.test-app {
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+  }
+
+  &__box {
+    max-width: 400px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__form {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    align-self: self-start;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  &__btn {
+    margin-bottom: 10px;
+    max-width: 200px;
+    width: 100%;
+    padding: 15px;
+    transition:
+      background-color 0.2s linear,
+      opacity 0.2s linear;
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgb(82, 132, 219);
+      outline: transparent;
+    }
+
+    &:hover {
+      background-color: rgba($color: gray, $alpha: 0.6);
+    }
+
+    &:active {
+      background-color: rgba($color: black, $alpha: 0.2);
+    }
+  }
+
+  &__textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    resize: none;
+
+    &--answer {
+      height: 80%;
+    }
+  }
+}

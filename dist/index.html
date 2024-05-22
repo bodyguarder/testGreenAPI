@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testTask</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="test-app">
+    <h1 class="test-app__title">Тестовое задание на должность
+      "Специалист технической поддержки 2 линии"</h1>
+    <div class="test-app__container container">
+      <div class="test-app__box">
+        <label class="test-app__label" for="idInstance">*idInstance:</label>
+        <input class="test-app__input" id="idInstance" type="text" required>
+        <label class="test-app__label" for="apiTokenInstance">*apiTokenInstance:</label>
+        <input class="test-app__input" id="apiTokenInstance" type="text" required>
+
+        <button class="test-app__btn" id="getSettings" type="button">getSetting</button>
+        <button class="test-app__btn" type="button" id="getStateInstance">getStateInstance</button>
+
+        <form class="test-app__form" action="">
+          <label class="test-app__label" for="phoneNumberForMessage">phoneNumber:</label>
+          <input class="test-app__input" id="phoneNumberForMessage" type="text">
+
+          <textarea class="test-app__textarea" name="waMessage" id="waMessage" rows="5"
+            placeholder="Input some message"></textarea>
+
+          <button class="test-app__btn" id="sendMessage" type="button">sendMessage</button>
+        </form>
+
+        <form class="test-app__form" action="">
+          <label class="test-app__label" for="phoneNumberForFile">phoneNumber:</label>
+          <input class="test-app__input" id="phoneNumberForFile" type="text">
+
+          <label class="test-app__label" for="filesURL"></label>
+          <input class="test-app__input" id="filesURL" type="text" placeholder="input file's URL">
+
+          <button class="test-app__btn" type="button" id="sendFileByURL">sendFileByURL</button>
+        </form>
+      </div>
+
+      <div class="test-app__box test-app__box">
+        <label class="test-app__label" for="answerFromWa">Answer:</label>
+        <textarea class="test-app__textarea test-app__textarea--answer" name="answerFromWa" id="answerFromWa"
+          readonly></textarea>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="js/main.min.js"></script>
+
+</html>

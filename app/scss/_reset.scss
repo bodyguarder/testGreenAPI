@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  background-color: transparent;
+  font: inherit;
+}
+
+.button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
